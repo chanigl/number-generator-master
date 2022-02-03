@@ -27,7 +27,7 @@ const classNameSquare = (number) => {
     }
     return className;
 }
-
+/* 
 const Square = ({ number }) => {
     let [newNumber,randomNumber]= useState(number)
     const change=()=>{
@@ -38,12 +38,12 @@ const Square = ({ number }) => {
             <h1 class="number" >{newNumber}</h1>
         </button>
     );
-};
-/*
+}; */
+
 const Square = ({ number }) => {
     const [newNumber,randomNumber]= useState(number)
     const change=()=>{
-        randomNumber(number=Math.floor(Math.random()*11)+newNumber)
+        randomNumber(Math.floor(Math.random()*11)+newNumber)
     }
     return (
         <button className={classNameSquare(newNumber)} onClick={change}>
@@ -51,5 +51,5 @@ const Square = ({ number }) => {
         </button>
     );
 };
-*/
+
 export default Square;
